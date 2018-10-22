@@ -59,7 +59,7 @@
                     <span>主页</span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -88,10 +88,6 @@
         </ul>
     </div>
     
-        <div id="toc" class="toc-article">
-    
-</div>
-    
 </div>
 
 
@@ -117,46 +113,50 @@
         
 
 
-<div class="post-container">
-    <div class="post-title">
-        
-    </div>
+<!-- 归档列表 -->
 
-    <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-21 15:47:46</span></span>
-        
-        
-        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
-</span>
+<div class="archives-container">
 
-    </div>
-    <div class="post-content ">
-        <hr>
-<p>title: 为什么开始写博客？<br>date: 2018-10-21 15:47:46<br>tags: # 杂谈</p>
-<hr>
-<p>日常信息获取途径中，社交工具占绝对统治地位，如微信则是其中的巨无霸。此刻，我微信好友是1559人，朋友圈内容繁复芜杂，外加以朋友圈为平台代购、推销、灌鸡汤者，不胜其烦。碎片化的信息只能带来短暂的刺激，费时费神，转眼就烟消云散。突破瓶颈化需要图片、语音、视频更直接、</p>
-<p>粗暴的刺激，这也是抖音风靡一时的原因之一吧。<br>—而立之年后，胸中的浮躁气逐渐散去，更青睐系统化、渐进式的生活、学习和工作方式。选择蒙特雷高翻的初衷也是为了专业更精进一些。对于笔译，我个人不太看好，一字千金、品读经典的时代已渐行渐远，传统纸媒的衰落注定让纯文字工作者更为艰辛；对于口译，目前收入尚属丰厚，但我深知能力不足，口译员的理想模式是双语成长背景，或中学就读外国语学校，大学就读于外语一流名校，打下坚实基础，研究生再精进提高，而后深耕某领域，这些我都不沾，蒙特雷会议口译毕业生号称MIIS Mafia，就我认识的同学而言，基本都符合如上描述，外加每日十余小时的练习，更让人望其项背；而项目经理所需的素质我基本具备：首先，我懂这个行业，无论上游还是下游；其次，我有良好的沟通能力和宏观把控能力；第三，我有良好的服务意识和再学习能力；第四，过去十余年，我有一定的行业积累，包括客户、译员和其他一些人脉。而我需要做的是把工作从单纯的翻译，扩大到本地化领域，这是个指数级的增值。来之前我反复研究蒙特雷高翻本地化和项目管理专业的设置，核心课程非常系统化，基本涵盖了专业所需，加之它又地处硅谷腹地，本地化的最前沿，所以没有什么犹豫的。<br>—到今天为止，来美两月，生活、学习基本适应。有两件事需要去做，一是加强语言能力；二是专业学习纵深化。国内多年的英语学习，基本上是彻底的失败，学不致用的东西，怎么可能指望得上？！对于专业，师傅领进门，这一点Max做得非常好，但修行靠个人，纵深化发展需要自己去做，找准点，深挖下去。<br>—找点需要对标。国内北京大学软件与微电子学院有相关方向，国内知名的王华树、韩林涛老师都毕业于此，在查阅相关资料中，偶然看到xulihang的博客，他目前在读。他的博客给我很多启发，也是让我再度写博客的原因之一，博客地址：<a href="http://blog.xulihang.me/。" target="_blank" rel="noopener">http://blog.xulihang.me/。</a><br>—博客用GitHub + Hexo很好搭建，大概用了2个多小时，参考了这篇文章<a href="https://zhuanlan.zhihu.com/p/26625249，Fork了http://niexiaotao.cn/的模板，很喜欢，简简单单只有文字。" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249，Fork了http://niexiaotao.cn/的模板，很喜欢，简简单单只有文字。</a></p>
-
+<div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
+                    <span class="tag-text">2018</span>
+                </span>
+    <ul>
         
-            <div class="donate-container">
-    <div class="donate-button">
-        <button id="donate-button">赞赏</button>
-    </div>
-    <div class="donate-img-container hide" id="donate-img-container">
-        <img id="donate-img" src="" data-src="/img/donate.jpg">
-        <p> 感谢鼓励 </p>
-    </div>
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li>
+            <span>10-21</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/10/21/为什么又重新写博客？/">
+                        <span>
+                            为什么又重新写博客？
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+        <!-- <li class="listing-item">
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </li> -->
+        <li>
+            <span>10-21</span>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/2018/10/21/hello-world/">
+                        <span>
+                            Hello World
+                        </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </li>
+        
+
+    </ul>
 </div>
-        
-        <br>
-        <div id="comment-container">
-        </div>
-        <div id="disqus_thread"></div>
 
-        <div id="lv-container">
-        </div>
-
-    </div>
 </div>
     </div>
 </div>
@@ -174,7 +174,23 @@
         </li>
         
         
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/zhuhua2018">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
 
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/5210862535">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
         
 
         
@@ -236,31 +252,12 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = true
+    window.isPost = false
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-
-    <script>
-        /**
-         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-        */
-        if( '' || '')
-        var disqus_config = function () {
-            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://www-revise4china-com.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
 
 
 
