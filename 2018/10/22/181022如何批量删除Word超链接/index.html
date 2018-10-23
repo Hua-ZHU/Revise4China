@@ -11,7 +11,7 @@
 
     <title>
         
-        Tags - 英文审校 | 翻译技术 | 本地化
+        如何批量删除Word超链接 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -59,7 +59,7 @@
                     <span>主页</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#删除超链接及锚文字"><span class="toc-text">删除超链接及锚文字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#仅删除超链接，保留锚文字"><span class="toc-text">仅删除超链接，保留锚文字</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -110,156 +114,60 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        <div id="tag_cloud" class="tags">
-    
-    <a href="#杂谈" title="杂谈" rel="1">杂谈</a>
-    
-    <a href="#Word技巧" title="Word技巧" rel="1">Word技巧</a>
-    
-    <a href="#WordPress" title="WordPress" rel="2">WordPress</a>
-    
-    <a href="#MAMP" title="MAMP" rel="1">MAMP</a>
-    
-    <a href="#网站本地化" title="网站本地化" rel="2">网站本地化</a>
-    
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        如何批量删除Word超链接
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-10-22 15:10:07</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Word技巧" title="Word技巧">Word技巧</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content ">
+        <p>待翻译文件有很多网址超链接时，不应统计在内，可通过以下方法删除：</p>
+<h3 id="删除超链接及锚文字"><a href="#删除超链接及锚文字" class="headerlink" title="删除超链接及锚文字"></a>删除超链接及锚文字</h3><ol>
+<li>Alt + F9，超链接转为大括号{}首尾标记；</li>
+<li>替换-更多-特殊格式-域，将^d替换成空白；</li>
+<li>全部替换，即删除。<h3 id="仅删除超链接，保留锚文字"><a href="#仅删除超链接，保留锚文字" class="headerlink" title="仅删除超链接，保留锚文字"></a>仅删除超链接，保留锚文字</h3></li>
+<li>ALT+A选择全文；</li>
+<li>Ctrl + Shift + F9；</li>
+<li>超链接全部取消。</li>
+</ol>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
 </div>
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
 
-<!-- 标签列表 -->
+        <div id="lv-container">
+        </div>
 
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="杂谈">
-                    <span class="tag-text">杂谈</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/21/181021为什么又重新写博客？/">
-            <h2 class="post-title">
-                为什么又重新写博客？
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
-    
 </div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Word技巧">
-                    <span class="tag-text">Word技巧</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/22/181022如何批量删除Word超链接/">
-            <h2 class="post-title">
-                如何批量删除Word超链接
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="WordPress">
-                    <span class="tag-text">WordPress</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/22/181022安装WordPress到MAMP服务器/">
-            <h2 class="post-title">
-                安装WordPress到MAMP服务器
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/22/181022将WordPress网站迁移到新服务器/">
-            <h2 class="post-title">
-                将WordPress迁移到MAMP服务器
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="MAMP">
-                    <span class="tag-text">MAMP</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/22/181022安装WordPress到MAMP服务器/">
-            <h2 class="post-title">
-                安装WordPress到MAMP服务器
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="网站本地化">
-                    <span class="tag-text">网站本地化</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/22/181022安装WordPress到MAMP服务器/">
-            <h2 class="post-title">
-                安装WordPress到MAMP服务器
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2018/10/22/181022将WordPress网站迁移到新服务器/">
-            <h2 class="post-title">
-                将WordPress迁移到MAMP服务器
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
     </div>
 </div>
 
@@ -354,12 +262,31 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        if( '' || '')
+        var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www-revise4china-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 
 
 
