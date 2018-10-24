@@ -11,7 +11,7 @@
 
     <title>
         
-        英文审校 | 翻译技术 | 本地化
+        MemoQ术语库导入Trados - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -59,7 +59,7 @@
                     <span>主页</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MemoQ术语库导出"><span class="toc-text">MemoQ术语库导出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Trados术语库导入"><span class="toc-text">Trados术语库导入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用SDL-MultiTerm-Converter"><span class="toc-text">使用SDL MultiTerm Converter</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -113,155 +117,63 @@
         
 
 
-<!-- 归档列表 -->
+<div class="post-container">
+    <div class="post-title">
+        MemoQ术语库导入Trados
+    </div>
 
-<div class="archives-container">
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-10-24 13:15:20</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#MemoQ" title="MemoQ">MemoQ</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#术语" title="术语">术语</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
 
-<div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
-                    <span class="tag-text">2018</span>
-                </span>
-    <ul>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-24</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/24/181024MemoQ术语库导入Trados/">
-                        <span>
-                            MemoQ术语库导入Trados
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-23</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/23/181023语言文件pot、po和mo简介/">
-                        <span>
-                            语言文件pot、po和mo简介
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-23</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/23/181023Git-Github和Gitlab的区别/">
-                        <span>
-                            Git, Github和Gitlab的区别
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-22</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/22/181022本地化项目管理（一）/">
-                        <span>
-                            本地化项目管理（一）
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-22</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/22/181022安装WordPress到MAMP服务器/">
-                        <span>
-                            安装WordPress到MAMP服务器
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-22</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/22/181022如何批量删除Word超链接/">
-                        <span>
-                            如何批量删除Word超链接
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-22</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/22/181022将WordPress网站迁移到新服务器/">
-                        <span>
-                            将WordPress网站迁移到MAMP服务器
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-21</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/21/181021为什么又重新写博客？/">
-                        <span>
-                            为什么又重新写博客？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>10-21</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/21/hello-world/">
-                        <span>
-                            Hello World
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
+    </div>
+    <div class="post-content ">
+        <h3 id="MemoQ术语库导出"><a href="#MemoQ术语库导出" class="headerlink" title="MemoQ术语库导出"></a>MemoQ术语库导出</h3><p>1.打开项目，点击左侧面板选择术语库，选中待导出术语库，右键单击，选择导出格式。</p>
+<p>2.导出格式分为三种，即CSV、XLSX和MultiTerm XML。</p>
+<p>CSV即逗号分隔值（Comma Split Value），其文件以纯文本形式存储表格数据（数据和文本），文件的每一行都是一个数据记录。它使用逗号作为字段分割值，分割字符也可以不是逗号。</p>
+<p>XLSX为Excel2007版以后文件。</p>
+<p>MultiTerm XML可扩展标记语言（英语：Extensible Markup Language，简称：XML），是一种标记语言。标记指计算机所能理解的信息符号，通过此种标记，计算机之间可以处理包含各种信息的文章等。XML文件可直接文本编辑器打开，或者直接导入到其它机器翻译软件如Trados。</p>
+<h3 id="Trados术语库导入"><a href="#Trados术语库导入" class="headerlink" title="Trados术语库导入"></a>Trados术语库导入</h3><p>Trados的术语库由单独软件管理，即SDL Multiterm。如果原MemoQ术语库比较规整，可直接文件-导入/导出-导入。导入后可以单击条目进行相应更改。</p>
+<h3 id="使用SDL-MultiTerm-Converter"><a href="#使用SDL-MultiTerm-Converter" class="headerlink" title="使用SDL MultiTerm Converter"></a>使用SDL MultiTerm Converter</h3><p>很多情况下，需要先整理原有MemoQ术语库，这时候就需要使用MultiTerm Converter，它是SDL Studio安装时自带的一款转换软件。</p>
+<p>选择MemoQ术语导出为XLSX格式，导出时注意选择导出列，只保留源文和译文即可。</p>
+<p>导出后Excel进行相应编辑，注意保留首行字段为对应语言，如第一列为English，第二列为Chinese。语言最好同Trados术语库语言一致，比如将Trados术语库语言设置为English(United States)和Chinese(Symplified)的话，有可能会发生错误。</p>
+<p>整理完毕后导入Converter，注意选择索引字段为首行字段如上述English和Chinese，选择对应语言，导出mtf.xml文件。然后导入到Trados。</p>
 
-    </ul>
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
 </div>
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
 
+        <div id="lv-container">
+        </div>
+
+    </div>
 </div>
     </div>
 </div>
@@ -357,12 +269,31 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        if( '' || '')
+        var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www-revise4china-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 
 
 
