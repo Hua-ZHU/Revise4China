@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库的原理"><span class="toc-text">术语库的原理</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库原理"><span class="toc-text">术语库原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导入前预防重复"><span class="toc-text">导入前预防重复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#已有库少量去重"><span class="toc-text">已有库少量去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#已有库大量去重"><span class="toc-text">已有库大量去重</span></a></li></ol>
 </div>
     
 </div>
@@ -140,8 +140,12 @@
 
     </div>
     <div class="post-content ">
-        <p>在合并或者整理术语库时，常能发现重复词条，少量可以手工调整，成千上万条手工调整就比较麻烦。</p>
-<h3 id="术语库的原理"><a href="#术语库的原理" class="headerlink" title="术语库的原理"></a>术语库的原理</h3>
+        <p>在合并或者整理术语库时，会发现重复词条。术语条目不多时，可手动调整；术语条目过多时，如何批量操作呢？</p>
+<h3 id="术语库原理"><a href="#术语库原理" class="headerlink" title="术语库原理"></a>术语库原理</h3><p>术语库不同于记忆库，它可以包含多个语言。Trados术语库可为术语添加索引字段index field、描述字段descriptive field、以及系统字段system field。</p>
+<h3 id="导入前预防重复"><a href="#导入前预防重复" class="headerlink" title="导入前预防重复"></a>导入前预防重复</h3><p>在合并术语库时，可选择如何处理重复术语，“跳过重复/skip the imported entries”或者“覆盖已有术语/overwrite the existing entries”。</p>
+<h3 id="已有库少量去重"><a href="#已有库少量去重" class="headerlink" title="已有库少量去重"></a>已有库少量去重</h3><p>打开MultiTerm，打开术语库，点击“高级搜索”-“搜索重复术语”，左侧结果列表中会显示重复术语具体信息；<br>找到重复术语时，可以删除或合并条目；<br>部分重复术语可能是有必要的，因为它们是同音异义词，代表不同的概念。<br></p>
+<h3 id="已有库大量去重"><a href="#已有库大量去重" class="headerlink" title="已有库大量去重"></a>已有库大量去重</h3><p>如果术语库中有大量词条重复时，Trados没有批量删除重复术语操作，但是有批量删除重复记忆库操作。此时可将术语导出为制表符分割值（Tab-seperated valued, TSV）txt格式，以数据形式导入到Excel表格，利用Excel表格删除重复字段方式处理后，再导入到术语库中即可。</p>
+
         
             <div class="donate-container">
     <div class="donate-button">
