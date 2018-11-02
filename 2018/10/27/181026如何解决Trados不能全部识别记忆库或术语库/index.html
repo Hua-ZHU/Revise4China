@@ -11,7 +11,7 @@
 
     <title>
         
-        Trados术语库中删除重复词条 - 英文审校 | 翻译技术 | 本地化
+        如何解决Trados不能全部识别记忆库或术语库 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库原理"><span class="toc-text">术语库原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导入前预防重复"><span class="toc-text">导入前预防重复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#已有库少量去重"><span class="toc-text">已有库少量去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#已有库大量去重"><span class="toc-text">已有库大量去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Trados记忆库删除重复翻译单元"><span class="toc-text">Trados记忆库删除重复翻译单元</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库不完整"><span class="toc-text">术语库不完整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#记忆库不完整"><span class="toc-text">记忆库不完整</span></a></li></ol>
 </div>
     
 </div>
@@ -119,18 +119,21 @@
 
 <div class="post-container">
     <div class="post-title">
-        Trados术语库中删除重复词条
+        如何解决Trados不能全部识别记忆库或术语库
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-24 15:26:57</span></span>
+        <span class="attr">发布于：<span>2018-10-27 14:44:37</span></span>
         
         <span class="attr">标签：/
         
         <a class="tag" href="/tags/#术语库" title="术语库">术语库</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#重复词条" title="重复词条">重复词条</a>
+        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#记忆库" title="记忆库">记忆库</a>
         <span>/</span>
         
         
@@ -140,12 +143,10 @@
 
     </div>
     <div class="post-content ">
-        <p>在合并或者整理术语库时，会发现重复词条。术语条目不多时，可手动调整；术语条目过多时，如何批量操作呢？</p>
-<h3 id="术语库原理"><a href="#术语库原理" class="headerlink" title="术语库原理"></a>术语库原理</h3><p>术语库不同于记忆库，它可以包含多个语言。Trados术语库可为术语添加索引字段index field、描述字段descriptive field、以及系统字段system field。</p>
-<h3 id="导入前预防重复"><a href="#导入前预防重复" class="headerlink" title="导入前预防重复"></a>导入前预防重复</h3><p>在合并术语库时，可选择如何处理重复术语，“跳过重复/skip the imported entries”或者“覆盖已有术语/overwrite the existing entries”。</p>
-<h3 id="已有库少量去重"><a href="#已有库少量去重" class="headerlink" title="已有库少量去重"></a>已有库少量去重</h3><p>打开MultiTerm，打开术语库，点击“高级搜索”-“搜索重复术语”，左侧结果列表中会显示重复术语具体信息；<br>找到重复术语时，可以删除或合并条目；<br>部分重复术语可能是有必要的，因为它们是同音异义词，代表不同的概念。<br></p>
-<h3 id="已有库大量去重"><a href="#已有库大量去重" class="headerlink" title="已有库大量去重"></a>已有库大量去重</h3><p>如果术语库中有大量词条重复时，Trados没有批量删除重复术语操作，但是有批量删除重复记忆库操作。此时可将术语导出为制表符分割值（Tab-seperated valued, TSV）txt格式，以<a href="http://revise4china.com/2018/10/25/181025Trados%E6%9C%AF%E8%AF%AD%E5%BA%93%E8%BD%AC%E5%AD%98%E4%B8%BAExcel%E8%A1%A8%E6%A0%BC/">数据形式导入到Excel表格</a>，利用<a href="http://revise4china.com/2018/10/25/181025Excel%E8%A1%A8%E6%A0%BC%E7%AD%9B%E9%80%89%E5%94%AF%E4%B8%80%E5%80%BC-%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%80%BC/">Excel表格删除重复字段</a>方式处理后，再导入到术语库中即可。</p>
-<h3 id="Trados记忆库删除重复翻译单元"><a href="#Trados记忆库删除重复翻译单元" class="headerlink" title="Trados记忆库删除重复翻译单元"></a>Trados记忆库删除重复翻译单元</h3><p>打开记忆库，选择“视图/View”-“搜索详情/Search Details”-“搜索类型/Search Type”-“搜索重复项/Search in potential duplicates only”，找到重复后编辑即可，如果有大量重复，可利用上述Excel操作替换。</p>
+        <h3 id="术语库不完整"><a href="#术语库不完整" class="headerlink" title="术语库不完整"></a>术语库不完整</h3><p>今天用Excel表格导入一批新术语，打开项目调用术语库时，发现很多术语不显示。打开术语库查看时，发现术语完整，查找术语时也没有问题，究竟是什么原因呢？</p>
+<p>经过几次实验，发现新建库的语言选择English而非English（en-us），Chinese而非（Chinese Symplified, China）。于是导出旧库为xml格式，打开全部替换语言对，再进行导入，调用时发现术语库可以正常使用。Trados这么敏感么？目前没有明确答案。</p>
+<h3 id="记忆库不完整"><a href="#记忆库不完整" class="headerlink" title="记忆库不完整"></a>记忆库不完整</h3><p>Concordance查询时，能发现记忆库中有对应内容，这说明库本身没有问题。于是更改匹配率，从70%降为60%，发现很多已有的库均能显示，包括匹配率90%以上的也能正常显示了。很奇怪为什么？目前没有明确答案。</p>
+<p>相对而言，个人更喜欢MemoQ，不复杂，流程清晰。使用Trados是为了验证PDF格式究竟哪个更好，还有翻译InDesign文件。</p>
 
         
             <div class="donate-container">
