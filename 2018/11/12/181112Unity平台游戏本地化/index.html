@@ -11,7 +11,7 @@
 
     <title>
         
-        英文审校 | 翻译技术 | 本地化
+        Unity引擎游戏本地化 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li class="active">
+            <li>
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Unity引擎"><span class="toc-text">Unity引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#I2-Localization插件"><span class="toc-text">I2 Localization插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#I2-Localization插件使用"><span class="toc-text">I2 Localization插件使用</span></a></li></ol>
+</div>
+    
 </div>
 
 
@@ -111,52 +115,73 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 720px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-10-21</div>
-        <div class="post-info">
-            <a href="/2018/10/21/181021为什么又重新写博客？/">
-                <h3>
-                    为什么又重新写博客？
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#杂谈" title="杂谈">杂谈</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-10-21</div>
-        <div class="post-info">
-            <a href="/2018/10/21/hello-world/">
-                <h3>
-                    Hello World
-                </h3>
-            </a>
-            <p>
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    <li class="previous">
-        <a href="/page/2/">&larr; Newer Posts</a>
-    </li>
-    
-    
-</ul>
 
+
+<div class="post-container">
+    <div class="post-title">
+        Unity引擎游戏本地化
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-11-12 21:12:29</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Unity" title="Unity">Unity</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#I2 Localization" title="I2 Localization">I2 Localization</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#游戏本地化" title="游戏本地化">游戏本地化</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content ">
+        <h3 id="Unity引擎"><a href="#Unity引擎" class="headerlink" title="Unity引擎"></a>Unity引擎</h3><p>Unity是一款跨平台2D/3D游戏引擎，可用于Window/MacOS/Linux单机游戏开发、PlayStation/XBox/Wii/Nintendo Switch等主机平台（Console）游戏开发、IOS/Android/Windows Phone等移动设备游戏开发、HTML5网页平台游戏开发、建筑可视化以及实施三维动画创作等。<a href="https://zh.wikipedia.org/wiki/Unity_(%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E" target="_blank" rel="noopener">维基百科</a>) 如有问题，可随时<a href="http://www.inter-illusion.com/forum/i2-localization" target="_blank" rel="noopener">登录Unity论坛</a>提问。</p>
+<h3 id="I2-Localization插件"><a href="#I2-Localization插件" class="headerlink" title="I2 Localization插件"></a>I2 Localization插件</h3><p><a href="http://www.inter-illusion.com/" target="_blank" rel="noopener">I2 Localization</a>是一款Unity引擎游戏本地化的插件，它的目标是‘最完备的Unity游戏本地化解决方案/The most complete Localization solution for Unity’，兼容绝大部分UI系统。主要特色如下：</p>
+<p>Google表格和本地CSV文件可作为外部文件进行连接，更易于编辑和修改，游戏部署后仍可下载编辑表格中内容进行更改或翻译，无需再发布新版本游戏；</p>
+<p>内部编辑器中可定义所有的游戏资源ID/Terms，一个Term管理不同语言的相同资源，可以设置不同的资源类型，文字、图片、字体等。随后添加语言，并可自动翻译；</p>
+<p>对于从右向左显示的语言如阿拉伯语，可自动适应；</p>
+<h3 id="I2-Localization插件使用"><a href="#I2-Localization插件使用" class="headerlink" title="I2 Localization插件使用"></a>I2 Localization插件使用</h3><ol>
+<li><p>将I2 Localization导入到Unity工程文件夹Assets中，Assets-Import Package-Custom Package；</p>
+</li>
+<li><p>在右侧Language Source中，单击Languages，新建语言分类；</p>
+</li>
+<li><p>对于使用GUI Text的组件，添加相应的Localize组件，然后添加Term，每个字符串会对应步骤2中所建语言分类，进行对应翻译后保存；</p>
+</li>
+<li><p>在GUI文件中添加切换语言使用代码；</p>
+</li>
+<li><p>测试，调试，注意有些Terms在组件components中。</p>
+</li>
+</ol>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
     </div>
 </div>
 
@@ -251,12 +276,31 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        if( '' || '')
+        var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www-revise4china-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 
 
 
