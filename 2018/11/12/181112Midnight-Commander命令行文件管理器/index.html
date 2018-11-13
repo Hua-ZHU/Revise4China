@@ -11,7 +11,7 @@
 
     <title>
         
-        如何解决Trados不能全部识别记忆库或术语库 - 英文审校 | 翻译技术 | 本地化
+        Midnight Commander命令行文件管理器 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库不完整"><span class="toc-text">术语库不完整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#记忆库不完整"><span class="toc-text">记忆库不完整</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Midnight-Commander"><span class="toc-text">Midnight Commander</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MC主要功能"><span class="toc-text">MC主要功能</span></a></li></ol>
 </div>
     
 </div>
@@ -119,21 +119,24 @@
 
 <div class="post-container">
     <div class="post-title">
-        如何解决Trados不能全部识别记忆库或术语库
+        Midnight Commander命令行文件管理器
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-27 14:44:37</span></span>
+        <span class="attr">发布于：<span>2018-11-12 19:56:03</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
+        <a class="tag" href="/tags/#MC" title="MC">MC</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#术语库" title="术语库">术语库</a>
+        <a class="tag" href="/tags/#Midnight Commander" title="Midnight Commander">Midnight Commander</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#记忆库" title="记忆库">记忆库</a>
+        <a class="tag" href="/tags/#Unix" title="Unix">Unix</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#文件管理器" title="文件管理器">文件管理器</a>
         <span>/</span>
         
         
@@ -143,10 +146,11 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="术语库不完整"><a href="#术语库不完整" class="headerlink" title="术语库不完整"></a>术语库不完整</h3><p>今天用Excel表格导入一批新术语，打开项目调用术语库时，发现很多术语不显示。打开术语库查看时，发现术语完整，查找术语时也没有问题，究竟是什么原因呢？</p>
-<p>经过几次实验，发现新建库的语言选择English而非English（en-us），Chinese而非（Chinese Symplified, China）。于是导出旧库为xml格式，打开全部替换语言对，再进行导入，调用时发现术语库可以正常使用。Trados这么敏感么？目前没有明确答案。</p>
-<h3 id="记忆库不完整"><a href="#记忆库不完整" class="headerlink" title="记忆库不完整"></a>记忆库不完整</h3><p>Concordance查询时，能发现记忆库中有对应内容，这说明库本身没有问题。于是更改匹配率，从70%降为60%，发现很多已有的库均能显示，包括匹配率90%以上的也能正常显示了。很奇怪为什么？目前没有明确答案。</p>
-<p>相对而言，个人更喜欢MemoQ，不复杂，流程清晰。使用Trados是为了验证PDF格式究竟哪个更好，还有翻译InDesign文件。</p>
+        <h3 id="Midnight-Commander"><a href="#Midnight-Commander" class="headerlink" title="Midnight Commander"></a>Midnight Commander</h3><p>MC是可视化字符界面文件管理器/基于文本模式的文件管理器/菜单式的文件管理程序，前身是DOS系统下的Norton Commander，它可运行在系统控制台、xterm或其它伪终端设备，为Unix类操作系统提供了清晰、友好、安全的操作接口，被称为Linux控制台和其它终端环境中的GNU“瑞士军刀”。</p>
+<h3 id="MC主要功能"><a href="#MC主要功能" class="headerlink" title="MC主要功能"></a>MC主要功能</h3><p>依靠NFS文件系统（Network File System），显示远程计算机上的目录信息；</p>
+<p>通过FTP以FTP目录树的方式在窗口中连接到远程计算机；</p>
+<p>能以文件树的形式显示Tar、Cpio和RPM文件；</p>
+<p>支持Unix系统特殊的命令，如改变文件属主（chown）和改变文件权限（chmod）,建立硬链接（links）和符号链接（symlinks）；</p>
 
         
             <div class="donate-container">

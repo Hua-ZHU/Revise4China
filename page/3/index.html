@@ -11,7 +11,7 @@
 
     <title>
         
-        如何解决Trados不能全部识别记忆库或术语库 - 英文审校 | 翻译技术 | 本地化
+        英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li>
+            <li class="active">
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,10 +88,6 @@
         </ul>
     </div>
     
-        <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库不完整"><span class="toc-text">术语库不完整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#记忆库不完整"><span class="toc-text">记忆库不完整</span></a></li></ol>
-</div>
-    
 </div>
 
 
@@ -115,60 +111,32 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-
-
-<div class="post-container">
-    <div class="post-title">
-        如何解决Trados不能全部识别记忆库或术语库
-    </div>
-
-    <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-27 14:44:37</span></span>
-        
-        <span class="attr">标签：/
-        
-        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#术语库" title="术语库">术语库</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#记忆库" title="记忆库">记忆库</a>
-        <span>/</span>
-        
-        
-        </span>
-        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
-</span>
-
-    </div>
-    <div class="post-content ">
-        <h3 id="术语库不完整"><a href="#术语库不完整" class="headerlink" title="术语库不完整"></a>术语库不完整</h3><p>今天用Excel表格导入一批新术语，打开项目调用术语库时，发现很多术语不显示。打开术语库查看时，发现术语完整，查找术语时也没有问题，究竟是什么原因呢？</p>
-<p>经过几次实验，发现新建库的语言选择English而非English（en-us），Chinese而非（Chinese Symplified, China）。于是导出旧库为xml格式，打开全部替换语言对，再进行导入，调用时发现术语库可以正常使用。Trados这么敏感么？目前没有明确答案。</p>
-<h3 id="记忆库不完整"><a href="#记忆库不完整" class="headerlink" title="记忆库不完整"></a>记忆库不完整</h3><p>Concordance查询时，能发现记忆库中有对应内容，这说明库本身没有问题。于是更改匹配率，从70%降为60%，发现很多已有的库均能显示，包括匹配率90%以上的也能正常显示了。很奇怪为什么？目前没有明确答案。</p>
-<p>相对而言，个人更喜欢MemoQ，不复杂，流程清晰。使用Trados是为了验证PDF格式究竟哪个更好，还有翻译InDesign文件。</p>
-
-        
-            <div class="donate-container">
-    <div class="donate-button">
-        <button id="donate-button">赞赏</button>
-    </div>
-    <div class="donate-img-container hide" id="donate-img-container">
-        <img id="donate-img" src="" data-src="/img/donate.jpg">
-        <p> 感谢鼓励 </p>
-    </div>
-</div>
-        
-        <br>
-        <div id="comment-container">
+<div class="post-preview-container" style="min-height: 720px">
+    
+    <div class="post-preview">
+        <div class="post-time">2018-10-21</div>
+        <div class="post-info">
+            <a href="/2018/10/21/hello-world/">
+                <h3>
+                    Hello World
+                </h3>
+            </a>
+            <p>
+                
+            </p>
         </div>
-        <div id="disqus_thread"></div>
-
-        <div id="lv-container">
-        </div>
-
     </div>
+    
 </div>
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page/2/">&larr; Newer Posts</a>
+    </li>
+    
+    
+</ul>
+
     </div>
 </div>
 
@@ -263,31 +231,12 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = true
+    window.isPost = false
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-
-    <script>
-        /**
-         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-        */
-        if( '' || '')
-        var disqus_config = function () {
-            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://www-revise4china-com.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
 
 
 

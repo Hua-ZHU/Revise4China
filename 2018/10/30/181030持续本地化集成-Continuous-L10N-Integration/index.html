@@ -11,7 +11,7 @@
 
     <title>
         
-        如何解决Trados不能全部识别记忆库或术语库 - 英文审校 | 翻译技术 | 本地化
+        持续本地化集成-Continuous L10N Integration - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库不完整"><span class="toc-text">术语库不完整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#记忆库不完整"><span class="toc-text">记忆库不完整</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#简介"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Serge"><span class="toc-text">Serge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Zing"><span class="toc-text">Zing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pootle"><span class="toc-text">Pootle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工作原理"><span class="toc-text">工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建Zing项目"><span class="toc-text">创建Zing项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见的Serge命令"><span class="toc-text">常见的Serge命令</span></a></li></ol>
 </div>
     
 </div>
@@ -119,21 +119,18 @@
 
 <div class="post-container">
     <div class="post-title">
-        如何解决Trados不能全部识别记忆库或术语库
+        持续本地化集成-Continuous L10N Integration
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-27 14:44:37</span></span>
+        <span class="attr">发布于：<span>2018-10-30 12:56:55</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
+        <a class="tag" href="/tags/#软件本地化" title="软件本地化">软件本地化</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#术语库" title="术语库">术语库</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#记忆库" title="记忆库">记忆库</a>
+        <a class="tag" href="/tags/#持续本地化集成" title="持续本地化集成">持续本地化集成</a>
         <span>/</span>
         
         
@@ -143,10 +140,40 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="术语库不完整"><a href="#术语库不完整" class="headerlink" title="术语库不完整"></a>术语库不完整</h3><p>今天用Excel表格导入一批新术语，打开项目调用术语库时，发现很多术语不显示。打开术语库查看时，发现术语完整，查找术语时也没有问题，究竟是什么原因呢？</p>
-<p>经过几次实验，发现新建库的语言选择English而非English（en-us），Chinese而非（Chinese Symplified, China）。于是导出旧库为xml格式，打开全部替换语言对，再进行导入，调用时发现术语库可以正常使用。Trados这么敏感么？目前没有明确答案。</p>
-<h3 id="记忆库不完整"><a href="#记忆库不完整" class="headerlink" title="记忆库不完整"></a>记忆库不完整</h3><p>Concordance查询时，能发现记忆库中有对应内容，这说明库本身没有问题。于是更改匹配率，从70%降为60%，发现很多已有的库均能显示，包括匹配率90%以上的也能正常显示了。很奇怪为什么？目前没有明确答案。</p>
-<p>相对而言，个人更喜欢MemoQ，不复杂，流程清晰。使用Trados是为了验证PDF格式究竟哪个更好，还有翻译InDesign文件。</p>
+        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>持续本地化集成（Continuous Localization Integration），遵循着持续化规则、以代码仓库为中心、自动析取所有需要本地化的字符串、同步到一个可视化的翻译平台、并将翻译平台的翻译结果同步回代码仓库；各部门分工协作、无缝配合，可以实现整个项目的快速迭代并缩短版本开发周期</p>
+<h3 id="Serge"><a href="#Serge" class="headerlink" title="Serge"></a>Serge</h3><p>SERGE = String Extraction and Resource Generation Engine</p>
+<p><a href="https://serge.io/" target="_blank" rel="noopener">Serge</a>是一个由Evernote开发的开源平台。支持多种翻译平台，官方推荐翻译平台<a href="https://github.com/evernote/zing" target="_blank" rel="noopener">Zing</a>和<a href="http://pootle.translatehouse.org/" target="_blank" rel="noopener">Pootle</a>，它采用Perl语言，项目托管在Github上。</p>
+<h3 id="Zing"><a href="#Zing" class="headerlink" title="Zing"></a>Zing</h3><p><a href="https://github.com/evernote/zing" target="_blank" rel="noopener">Zing</a>是印象笔记Evernote开发的在线翻译服务器软件，它应用于Surge平台上，用命令行Command Line进行相关操作，源自于Pootle软件，有很多相似之处。</p>
+<h3 id="Pootle"><a href="#Pootle" class="headerlink" title="Pootle"></a>Pootle</h3><p><a href="http://pootle.translatehouse.org/" target="_blank" rel="noopener">Pootle</a>是一个基于Web的在线翻译和翻译管理工具。它支持主流的本地化文件格式，如Gettext PO, XLIFF, Java .properties, PHP arrays等。并集成用户建议、机器翻译、术语管理、记忆库等功能。它的宣传口号是“Get your community translating your software into their languages”/“让你的社区将你的软件翻译成本地语言”。是一个社区本地化服务器（Community Localization Server）。</p>
+<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p>Developers’ harbor &gt;Lzable Resource Files&gt;Internal TM &gt;T9N Interchange Files&gt;Translators’ Cloud/<br>Source Code Reposit&lt;Lzable Resource Files&lt;Internal TM &lt;T9N Interchange Files&lt;In/External T9N Service</p>
+<h3 id="创建Zing项目"><a href="#创建Zing项目" class="headerlink" title="创建Zing项目"></a>创建Zing项目</h3><ol>
+<li><p>登录Zing账号，前往Admin → Admin → Projects，创建账户，设置权限；</p>
+</li>
+<li><p>打开命令提示符Command Prompt，用SSH（安全外壳协议/Secure Shell）登录服务器；</p>
+</li>
+<li><p>创建Serge config文件。在MC模式下，导航到config文件夹，F5复制config文件，F4编辑文件，选择本地化后的目的语，保存新config文件XX.serge；</p>
+</li>
+<li><p>返回命令行，导航到config文件夹，依次运行serge pull –initialize从Git库中拉取源代码字符串到Serge库、serge pull-ts从Zing中拉取翻译到Serge库、serge  localize生成PO文件、serge push-ts从Serge库中推送待翻译字符串到Zing；</p>
+</li>
+<li><p>返回Zing，在项目中可看到待翻译字符串，依次进行翻译；</p>
+</li>
+<li><p>翻译后运行serge pull-ts XX.serge从Zing中拉取翻译好的字符串；</p>
+</li>
+<li><p>运行serge push，将翻译好的字符创推送回Git库。</p>
+</li>
+</ol>
+<h3 id="常见的Serge命令"><a href="#常见的Serge命令" class="headerlink" title="常见的Serge命令"></a>常见的Serge命令</h3><ol>
+<li><p>pull - 从远程Git库里拉取最新的源文件到Serge/pull the undated source files from the remote Git repository;</p>
+</li>
+<li><p>pull-ts - 从Pootle/Zing拉取最新翻译到Serge/pull the latest translation from Pootle/Zing;</p>
+</li>
+<li><p>localize - 生成PO文件/generate the PO files;</p>
+</li>
+<li><p>push-ts - 从Serge推送给Pootle/Zing最新的源文件/push the updated source files to Pootle;</p>
+</li>
+<li><p>push - 向Git库推送翻译文件/push the tranlation to the Git server。</p>
+</li>
+</ol>
 
         
             <div class="donate-container">
