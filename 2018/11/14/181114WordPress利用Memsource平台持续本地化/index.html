@@ -11,7 +11,7 @@
 
     <title>
         
-        如何解决Trados不能全部识别记忆库或术语库 - 英文审校 | 翻译技术 | 本地化
+        利用Memsource插件实现WordPress网站持续本地化 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库不完整"><span class="toc-text">术语库不完整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#记忆库不完整"><span class="toc-text">记忆库不完整</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Memsource平台简介"><span class="toc-text">Memsource平台简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WordPress中Memsource翻译插件简介及设置"><span class="toc-text">WordPress中Memsource翻译插件简介及设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Memsource持续本地化设置"><span class="toc-text">Memsource持续本地化设置</span></a></li></ol>
 </div>
     
 </div>
@@ -119,21 +119,21 @@
 
 <div class="post-container">
     <div class="post-title">
-        如何解决Trados不能全部识别记忆库或术语库
+        利用Memsource插件实现WordPress网站持续本地化
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-27 14:44:37</span></span>
+        <span class="attr">发布于：<span>2018-11-14 20:11:22</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#术语库" title="术语库">术语库</a>
+        <a class="tag" href="/tags/#WordPress" title="WordPress">WordPress</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
+        <a class="tag" href="/tags/#Memsource" title="Memsource">Memsource</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#记忆库" title="记忆库">记忆库</a>
+        <a class="tag" href="/tags/#持续本地化" title="持续本地化">持续本地化</a>
         <span>/</span>
         
         
@@ -143,10 +143,17 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="术语库不完整"><a href="#术语库不完整" class="headerlink" title="术语库不完整"></a>术语库不完整</h3><p>今天用Excel表格导入一批新术语，打开项目调用术语库时，发现很多术语不显示。打开术语库查看时，发现术语完整，查找术语时也没有问题，究竟是什么原因呢？</p>
-<p>经过几次实验，发现新建库的语言选择English而非English（en-us），Chinese而非（Chinese Symplified, China）。于是导出旧库为xml格式，打开全部替换语言对，再进行导入，调用时发现术语库可以正常使用。Trados这么敏感么？目前没有明确答案。</p>
-<h3 id="记忆库不完整"><a href="#记忆库不完整" class="headerlink" title="记忆库不完整"></a>记忆库不完整</h3><p>Concordance查询时，能发现记忆库中有对应内容，这说明库本身没有问题。于是更改匹配率，从70%降为60%，发现很多已有的库均能显示，包括匹配率90%以上的也能正常显示了。很奇怪为什么？目前没有明确答案。</p>
-<p>相对而言，个人更喜欢MemoQ，不复杂，流程清晰。使用Trados是为了验证PDF格式究竟哪个更好，还有翻译InDesign文件。</p>
+        <h3 id="Memsource平台简介"><a href="#Memsource平台简介" class="headerlink" title="Memsource平台简介"></a>Memsource平台简介</h3><p><a href="www.memsource.com">Memsource</a>是基于网页的在线翻译平台。其操作界面和基本流程同大多数CAT工具相似，项目设置在同一个页面内完成，支持50多种文件格式。其最大的优势是项目在云端进行，简单设置即可实现多用户协作。它提供收费企业用户版和免费个人用户版。</p>
+<h3 id="WordPress中Memsource翻译插件简介及设置"><a href="#WordPress中Memsource翻译插件简介及设置" class="headerlink" title="WordPress中Memsource翻译插件简介及设置"></a>WordPress中Memsource翻译插件简介及设置</h3><p>在WP站点中添加并激活“Memsource Translation Plugin for WordPress”，记录下token，在language mapping页面设置本地化语言，注意语言代码可能会同WPML和WordPress有所不同，尽量统一，如使用en而非en_us。</p>
+<h3 id="Memsource持续本地化设置"><a href="#Memsource持续本地化设置" class="headerlink" title="Memsource持续本地化设置"></a>Memsource持续本地化设置</h3><ol>
+<li>首先点击右上侧设置按钮，添加客户，设置TB和TM，注意名称统一；</li>
+<li>选择Integration → Connectors，新建，用之前保存的token新建连接；</li>
+<li>设置临时项目，加载TB和TM，另存成项目模板，名称同之前保持一致；</li>
+<li>回到Automation → Project Templates &gt; Setting，选择Translation，选择Talent/译员，一有更新，立即通知译员；</li>
+<li>回到Automation → Services，新建项目，同上面名称保持一致，选择项目模板；</li>
+<li>回到Automation → Automated Project Creation，页面/Pages和帖子/Posts分别设置不同自动翻译项目，选择Remote folder，等待Connectors连接，选择全部页面/Pages，设置更新频率/Frequency，每日或每周更新均可；</li>
+<li>译员收到待翻译邮件后，点击翻译完毕文件，Download → Export to Online Repository，本地化即可完成。</li>
+</ol>
 
         
             <div class="donate-container">
