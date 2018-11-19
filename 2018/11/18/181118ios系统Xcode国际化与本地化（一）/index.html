@@ -11,7 +11,7 @@
 
     <title>
         
-        如何解决Trados不能全部识别记忆库或术语库 - 英文审校 | 翻译技术 | 本地化
+        ios系统Xcode国际化与本地化（一） - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#术语库不完整"><span class="toc-text">术语库不完整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#记忆库不完整"><span class="toc-text">记忆库不完整</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#关于国际化-I18N和本地化-L10N"><span class="toc-text">关于国际化/I18N和本地化/L10N</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#应用程序国际化"><span class="toc-text">应用程序国际化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#应用程序本地化"><span class="toc-text">应用程序本地化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试应用程序"><span class="toc-text">测试应用程序</span></a></li></ol>
 </div>
     
 </div>
@@ -119,21 +119,24 @@
 
 <div class="post-container">
     <div class="post-title">
-        如何解决Trados不能全部识别记忆库或术语库
+        ios系统Xcode国际化与本地化（一）
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-27 14:44:37</span></span>
+        <span class="attr">发布于：<span>2018-11-18 22:23:51</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#术语库" title="术语库">术语库</a>
+        <a class="tag" href="/tags/#ios系统" title="ios系统">ios系统</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
+        <a class="tag" href="/tags/#Xcode" title="Xcode">Xcode</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#记忆库" title="记忆库">记忆库</a>
+        <a class="tag" href="/tags/#国际化" title="国际化">国际化</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#本地化" title="本地化">本地化</a>
         <span>/</span>
         
         
@@ -143,10 +146,49 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="术语库不完整"><a href="#术语库不完整" class="headerlink" title="术语库不完整"></a>术语库不完整</h3><p>今天用Excel表格导入一批新术语，打开项目调用术语库时，发现很多术语不显示。打开术语库查看时，发现术语完整，查找术语时也没有问题，究竟是什么原因呢？</p>
-<p>经过几次实验，发现新建库的语言选择English而非English（en-us），Chinese而非（Chinese Symplified, China）。于是导出旧库为xml格式，打开全部替换语言对，再进行导入，调用时发现术语库可以正常使用。Trados这么敏感么？目前没有明确答案。</p>
-<h3 id="记忆库不完整"><a href="#记忆库不完整" class="headerlink" title="记忆库不完整"></a>记忆库不完整</h3><p>Concordance查询时，能发现记忆库中有对应内容，这说明库本身没有问题。于是更改匹配率，从70%降为60%，发现很多已有的库均能显示，包括匹配率90%以上的也能正常显示了。很奇怪为什么？目前没有明确答案。</p>
-<p>相对而言，个人更喜欢MemoQ，不复杂，流程清晰。使用Trados是为了验证PDF格式究竟哪个更好，还有翻译InDesign文件。</p>
+        <h3 id="关于国际化-I18N和本地化-L10N"><a href="#关于国际化-I18N和本地化-L10N" class="headerlink" title="关于国际化/I18N和本地化/L10N"></a>关于国际化/I18N和本地化/L10N</h3><p>本地化是将软件源语言翻译至目的语的过程。在本地化之前，必须先将代码国际化。国际化是让软件适应多语言的过程，简单来讲，就是将需要翻译的内容‘包/Wrap起来’。</p>
+<p>Xcode支持渐进式本地化。你可在开发过程中，先将用户界面和部分代码国际化，然后用‘伪本地化’测试，随后将待本地化文本导出成标准文本格式如.xliff，交付给本地化团队翻译。等待译文返回期间，还可以继续增加或变更文本，重复上一轮本地化操作。</p>
+<h3 id="应用程序国际化"><a href="#应用程序国际化" class="headerlink" title="应用程序国际化"></a>应用程序国际化</h3><p>国际化内容主要分为两部分，一是用户界面；二是代码。</p>
+<ol>
+<li><p>使用基本国际化将用户界面文本从.storyboard和.xib文件中分离；</p>
+</li>
+<li><p>从代码中分离其它用户界面文本；</p>
+</li>
+<li><p>使用标准API处理复杂的书写系统和本地化格式；</p>
+</li>
+<li><p>在格式、分类、搜索和解析数据时，遵从用户设置；</p>
+</li>
+<li><p>如果程序支持从右至左的语言，请镜像用户界面，根据需要改变文本方向。</p>
+</li>
+</ol>
+<h3 id="应用程序本地化"><a href="#应用程序本地化" class="headerlink" title="应用程序本地化"></a>应用程序本地化</h3><ol>
+<li><p>使用标准文件格式导入和导出本地化文件；</p>
+</li>
+<li><p>在用户界面中锁定视图；</p>
+</li>
+<li><p>导出本地化文件；</p>
+</li>
+<li><p>将文件发送给译员；</p>
+</li>
+<li><p>导入本地化文件，并确认变更；</p>
+</li>
+<li><p>检查其他遗漏本地化步骤。</p>
+</li>
+</ol>
+<h3 id="测试应用程序"><a href="#测试应用程序" class="headerlink" title="测试应用程序"></a>测试应用程序</h3><ol>
+<li><p>在本地化前，在Interface Builder中使用‘伪本地化’测试用户界面；</p>
+</li>
+<li><p>在本地化前，使用不用的伪翻译测试程序；</p>
+</li>
+<li><p>在本地化后，在Interface Builder中预览本地化；</p>
+</li>
+<li><p>用检测非本地化文本的选项运行程序；</p>
+</li>
+<li><p>用所有支持语言和地区运行程序；</p>
+</li>
+<li><p>请母语人士测试应用程序。</p>
+</li>
+</ol>
 
         
             <div class="donate-container">
