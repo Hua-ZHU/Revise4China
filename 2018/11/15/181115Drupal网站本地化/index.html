@@ -11,7 +11,7 @@
 
     <title>
         
-        MemoQ术语库导入Trados - 英文审校 | 翻译技术 | 本地化
+        Drupal网站本地化 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MemoQ术语库导出"><span class="toc-text">MemoQ术语库导出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Trados术语库导入"><span class="toc-text">Trados术语库导入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用SDL-MultiTerm-Converter"><span class="toc-text">使用SDL MultiTerm Converter</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Drupal简介"><span class="toc-text">Drupal简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drupal网站本地化"><span class="toc-text">Drupal网站本地化</span></a></li></ol>
 </div>
     
 </div>
@@ -119,21 +119,18 @@
 
 <div class="post-container">
     <div class="post-title">
-        MemoQ术语库导入Trados
+        Drupal网站本地化
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-24 13:15:20</span></span>
+        <span class="attr">发布于：<span>2018-11-15 08:58:29</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#MemoQ" title="MemoQ">MemoQ</a>
+        <a class="tag" href="/tags/#网站本地化" title="网站本地化">网站本地化</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#Trados" title="Trados">Trados</a>
-        <span>/</span>
-        
-        <a class="tag" href="/tags/#术语" title="术语">术语</a>
+        <a class="tag" href="/tags/#Drupal" title="Drupal">Drupal</a>
         <span>/</span>
         
         
@@ -143,16 +140,24 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="MemoQ术语库导出"><a href="#MemoQ术语库导出" class="headerlink" title="MemoQ术语库导出"></a>MemoQ术语库导出</h3><p>1.打开项目，点击左侧面板选择术语库，选中待导出术语库，右键单击，选择导出格式。</p>
-<p>2.导出格式分为三种，即CSV、XLSX和MultiTerm XML。</p>
-<p>CSV即逗号分隔值（Comma Split Value），其文件以纯文本形式存储表格数据（数据和文本），文件的每一行都是一个数据记录。它使用逗号作为字段分割值，分割字符也可以不是逗号。</p>
-<p>XLSX为Excel2007版以后文件。</p>
-<p>MultiTerm XML可扩展标记语言（英语：Extensible Markup Language，简称：XML），是一种标记语言。标记指计算机所能理解的信息符号，通过此种标记，计算机之间可以处理包含各种信息的文章等。XML文件可直接文本编辑器打开，或者直接导入到其它机器翻译软件如Trados。</p>
-<h3 id="Trados术语库导入"><a href="#Trados术语库导入" class="headerlink" title="Trados术语库导入"></a>Trados术语库导入</h3><p>Trados的术语库由单独软件管理，即SDL Multiterm。如果原MemoQ术语库比较规整，可直接文件-导入/导出-导入。导入后可以单击条目进行相应更改。</p>
-<h3 id="使用SDL-MultiTerm-Converter"><a href="#使用SDL-MultiTerm-Converter" class="headerlink" title="使用SDL MultiTerm Converter"></a>使用SDL MultiTerm Converter</h3><p>很多情况下，需要先整理原有MemoQ术语库，这时候就需要使用MultiTerm Converter，它是SDL Studio安装时自带的一款转换软件。</p>
-<p>选择MemoQ术语导出为XLSX格式，导出时注意选择导出列，只保留源文和译文即可。</p>
-<p>导出后Excel进行相应编辑，注意保留首行字段为对应语言，如第一列为English，第二列为Chinese。语言最好同Trados术语库语言一致，比如将Trados术语库语言设置为English(United States)和Chinese(Symplified)的话，有可能会发生错误。</p>
-<p>整理完毕后导入Converter，注意选择索引字段为首行字段如上述English和Chinese，选择对应语言，导出mtf.xml文件。然后导入到Trados。</p>
+        <h3 id="Drupal简介"><a href="#Drupal简介" class="headerlink" title="Drupal简介"></a>Drupal简介</h3><p><a href="https://www.drupal.org/" target="_blank" rel="noopener">Drupal</a>是由PHP语言编写的开源内容管理系统（CMS），但业界通常将其视为内容管理框架（CMF）。它将所有内容视为一个节点/node，背后由大量模块/module控制其显示、修改、排列、分类等功能。人们常比较WordPress和Drupal的功能，前者更容易上手，后者适合搭建功能复杂的界面。</p>
+<p>模块/Mode：Drupal有众多模块结构，如Node、网站管理、Blog、日记、电子商务、电子出版、留言簿、投票等，有些核心模块如node必须开启，其它模块可按需开启；</p>
+<p>节点/node：Drupal中的node相当于WP中的pages/posts。</p>
+<p>分类/taxonomies：WP中的类别是category，一篇post发出后可设定术语1个多多个类别/category；Drupal通过vocabularies/类别和terms/分类来管理内容，一个类别下包含一个过多个分类。比如一个node叫做“相册”，新建相片可以输入的类别可能是“Where”、“Theme”，在每种类别中可以选择一个分类，上传照片后，“Where”选择“洛杉矶”，“Theme”选择“人像”；但如果另一个node叫做“体育”，那么类别就不会有“在哪儿”，而应该是“体育项目”。</p>
+<h3 id="Drupal网站本地化"><a href="#Drupal网站本地化" class="headerlink" title="Drupal网站本地化"></a>Drupal网站本地化</h3><ol>
+<li><p>访问<a href="https://yourdomain.com/user/login" target="_blank" rel="noopener">用户登录页面</a>，用户名+密码登录Drupal站点；</p>
+</li>
+<li><p>Admin工具栏，选择扩展/Extend，选择多语言/Multilingual，选择内容翻译/Content T9N和语言/Language，安装；</p>
+</li>
+<li><p>回到Admin，设置/configuration，语言/languages，添加即将本地化的目的语言；右侧按钮侦测和选择/detection and selection，可设置站点选择默认语言的方式；</p>
+</li>
+<li><p>回到Admin，设置/configuration，内容语言/Content Language，选择Content/Custom Block/Custom Menu Link/Taxonomy term，设置为translatable；</p>
+</li>
+<li><p>在Content界面，点击翻译/Translae按钮，点击新增/Add，翻译内容；</p>
+</li>
+<li><p>在结构/Structure界面，区块布局/Block layout，添加Place holder，选择语言选择按钮/Language Switcher。</p>
+</li>
+</ol>
 
         
             <div class="donate-container">
