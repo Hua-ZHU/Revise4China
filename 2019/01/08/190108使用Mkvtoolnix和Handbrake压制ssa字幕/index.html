@@ -11,7 +11,7 @@
 
     <title>
         
-        安装WordPress到MAMP服务器 - 英文审校 | 翻译技术 | 本地化
+        使用Mkvtoolnix和Handbrake压制ssa字幕 - 英文审校 | 翻译技术 | 本地化
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装MAMP"><span class="toc-text">安装MAMP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装WordPress"><span class="toc-text">安装WordPress</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#srt、ssa、ass三种字幕格式的区别"><span class="toc-text">srt、ssa、ass三种字幕格式的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用Mkvtoolnix整合视频和字幕"><span class="toc-text">使用Mkvtoolnix整合视频和字幕</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用Handbrake压制"><span class="toc-text">使用Handbrake压制</span></a></li></ol>
 </div>
     
 </div>
@@ -119,21 +119,21 @@
 
 <div class="post-container">
     <div class="post-title">
-        安装WordPress到MAMP服务器
+        使用Mkvtoolnix和Handbrake压制ssa字幕
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-10-22 20:03:54</span></span>
+        <span class="attr">发布于：<span>2019-01-08 11:41:25</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#WordPress" title="WordPress">WordPress</a>
+        <a class="tag" href="/tags/#Handbrake" title="Handbrake">Handbrake</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#MAMP" title="MAMP">MAMP</a>
+        <a class="tag" href="/tags/#Mkvtoolnix" title="Mkvtoolnix">Mkvtoolnix</a>
         <span>/</span>
         
-        <a class="tag" href="/tags/#网站本地化" title="网站本地化">网站本地化</a>
+        <a class="tag" href="/tags/#ssa" title="ssa">ssa</a>
         <span>/</span>
         
         
@@ -143,18 +143,13 @@
 
     </div>
     <div class="post-content ">
-        <h3 id="安装MAMP"><a href="#安装MAMP" class="headerlink" title="安装MAMP"></a>安装MAMP</h3><ol>
-<li>下载<a href="https://www.mamp.info/en/downloads/" target="_blank" rel="noopener">MAMP</a>，不用安装pro版；</li>
-<li>设置根目录到网站文件夹；</li>
-<li>设置端口；</li>
-<li>打开起始页，My Website，能发现网站列表，单击即可预览；<h3 id="安装WordPress"><a href="#安装WordPress" class="headerlink" title="安装WordPress"></a>安装WordPress</h3></li>
-<li>下载<a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress</a>，解压到站点文件夹内；</li>
-<li>MAMP中点击phpMyInfo，新建数据库，同站点文件夹同名；</li>
-<li>登录<a href="">http://localhost:81/databasename</a>完成安装；填写语言、服务器名称、密码等信息；</li>
-<li>系统自动创建SCAdmin账号及密码，留存登录；</li>
-<li>WordPress安装完毕，建议网站搭建成功；</li>
-<li>可直接导入已有网站.wpress文件或利用模板丰富网站。</li>
-</ol>
+        <h3 id="srt、ssa、ass三种字幕格式的区别"><a href="#srt、ssa、ass三种字幕格式的区别" class="headerlink" title="srt、ssa、ass三种字幕格式的区别"></a>srt、ssa、ass三种字幕格式的区别</h3><p>srt，即SubRip Text，为最常见的文本字幕格式，制作简单，兼容性高；</p>
+<p>ssa，即S Station Alpha，功能比srt强大，支持多种字体颜色和字体特效；</p>
+<p>ass，即Advanced SubStation Alpha，包含ssa所有的功能，并有较大扩展，视觉效果更佳。</p>
+<h3 id="使用Mkvtoolnix整合视频和字幕"><a href="#使用Mkvtoolnix整合视频和字幕" class="headerlink" title="使用Mkvtoolnix整合视频和字幕"></a>使用Mkvtoolnix整合视频和字幕</h3><p>Mkvtoolnix为开源免费软件，简单易用，功能丰富；</p>
+<p>点击源文件——添加视频和字幕——选择混流（start multiplexing），即可导出新mkv文件。</p>
+<h3 id="使用Handbrake压制"><a href="#使用Handbrake压制" class="headerlink" title="使用Handbrake压制"></a>使用Handbrake压制</h3><p>Handbrake功能强大，能压制不同类型的媒体文件。</p>
+<p>用Handbrake打开新mkv文件——在subtitle选项卡中勾选Mkvtoolnix混流进去的字幕文件——选择‘burn in’——选择压制格式及大小——硬压字幕成功。</p>
 
         
             <div class="donate-container">
